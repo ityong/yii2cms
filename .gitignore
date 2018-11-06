@@ -3,3 +3,4 @@
 /backend/runtime/*
 /frontend/runtime/*
 /api/runtime/*
+/console/runtime/*
