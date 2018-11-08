@@ -1,8 +1,8 @@
 <?php
-use backend\assets\LayuiAsset;
+use backend\assets\UiLayAsset;
 
-LayuiAsset::register($this); 
-LayuiAsset::addScript($this,"@web/js/socket.js");
+UiLayAsset::register($this);
+UiLayAsset::addScript($this,"@web/js/socket.js");
 $this->registerJs($this->render('js/online-users.js'));
 ?>
 <div class="article-index layui-form news_list">

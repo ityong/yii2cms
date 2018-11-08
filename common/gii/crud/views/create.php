@@ -8,9 +8,9 @@ use yii\helpers\StringHelper;
 
 echo "<?php\n";
 ?>
-use backend\assets\LayuiAsset;
+use backend\assets\UiLayAsset;
 
-LayuiAsset::register($this);
+UiLayAsset::register($this);
 ?>
 <div class="<?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>-create">
     <?= "<?= " ?>$this->render('_form', [

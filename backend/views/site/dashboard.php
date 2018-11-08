@@ -1,8 +1,8 @@
 <?php
-use backend\assets\LayuiAsset;
+use backend\assets\UiLayAsset;
 
-LayuiAsset::register($this);
-LayuiAsset::addScript($this, "@web/js/index.js");
+UiLayAsset::register($this);
+UiLayAsset::addScript($this, "@web/js/index.js");
 ?>
 	<div class="panel_box">
 		<div class="panel col">

@@ -1,7 +1,7 @@
 <?php
-use backend\assets\LayuiAsset;
+use backend\assets\UiLayAsset;
 
-LayuiAsset::register($this);
+UiLayAsset::register($this);
 $this->registerJs($this->render('js/create.js'));
 ?>
 <div class="config-create">

@@ -2,10 +2,10 @@
 
 use yii\helpers\Html;
 use yii\helpers\Url;
-use backend\assets\LayuiAsset;
+use backend\assets\UiLayAsset;
 use yii\grid\GridView;
 use common\models\UserRank;
-LayuiAsset::register($this); 
+UiLayAsset::register($this);
 $this->registerJs($this->render('js/index.js'));
 /* @var $this yii\web\View */
 /* @var $searchModel common\models\searchs\User */

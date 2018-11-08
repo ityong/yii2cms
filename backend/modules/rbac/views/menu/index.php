@@ -3,13 +3,13 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
-use backend\assets\LayuiAsset;
+use backend\assets\UiLayAsset;
 use yii\helpers\Url;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 /* @var $searchModel rbac\models\searchs\Menu */
 
-LayuiAsset::register($this); 
+UiLayAsset::register($this);
 $this->registerJs($this->render('js/index.js'));
 ?>
 <blockquote class="layui-elem-quote" style="font-size: 14px;">

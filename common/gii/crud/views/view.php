@@ -11,9 +11,9 @@ $urlParams = $generator->generateUrlParams();
 echo "<?php\n";
 ?>
 use yii\widgets\DetailView;
-use backend\assets\LayuiAsset;
+use backend\assets\UiLayAsset;
 
-LayuiAsset::register($this);
+UiLayAsset::register($this);
 ?>
 <div class="<?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>-view">
     <?= "<?= " ?>DetailView::widget([

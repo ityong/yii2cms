@@ -1,9 +1,9 @@
 <?php
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
-use backend\assets\LayuiAsset;
+use backend\assets\UiLayAsset;
 
-LayuiAsset::register($this);
+UiLayAsset::register($this);
 
 $this->registerJs($this->render('js/upload.js'));
 ?>

@@ -1,41 +1,38 @@
 <?php
-$params = array_merge(
-    require(__DIR__ . '/../../common/config/params.php'),
-    require(__DIR__ . '/../../common/config/params-local.php'),
-    require(__DIR__ . '/params.php'),
-    require(__DIR__ . '/params-local.php')
-);
 
 return [
     'id' => 'app-backend',
-	'name' => 'alili后台管理系统',
+    'name' => 'alili后台管理系统',
     'basePath' => dirname(__DIR__),
     'language' => 'zh-CN',
+    'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
+    'timeZone' => 'Asia/Shanghai',
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [
-        "rbac" => [        
+        "rbac" => [
             'class' => 'rbac\Module',
         ],
-        "system" => [        
+        "system" => [
             'class' => 'system\Module',
         ],
-        "backup" => [        
+        "backup" => [
             'class' => 'backup\Module',
         ],
     ],
-    "aliases" => [    
-        '@rbac' => '@backend/modules/rbac',
-		'@system' => '@backend/modules/system',
-		'@backup' => '@backend/modules/backup',
+    "aliases" => [
+        '@rbac'   => '@backend/modules/rbac',
+        '@system' => '@backend/modules/system',
+        '@backup' => '@backend/modules/backup',
     ],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
+            'cookieValidationKey' => '8tPt7bDj244hrkwLdq5GvJg-08vkyo-ssss',
         ],
         'user' => [
             'identityClass' => 'rbac\models\User',
-            'loginUrl' => array('/rbac/user/login'),
+            'loginUrl' => ['/rbac/user/login'],
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
         ],
@@ -54,18 +51,18 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        "authManager" => [        
-            "class" => 'yii\rbac\DbManager',   
-            "defaultRoles" => ["guest"],    
+        "authManager" => [
+            "class" => 'yii\rbac\DbManager',
+            "defaultRoles" => ["guest"],
         ],
-        "urlManager" => [       
-            "enablePrettyUrl" => true,        
-            "enableStrictParsing" => false,     
-            "showScriptName" => false,       
-            "suffix" => "",    
-            "rules" => [        
-                "<controller:\w+>/<id:\d+>"=>"<controller>/view",  
-                "<controller:\w+>/<action:\w+>"=>"<controller>/<action>"    
+        "urlManager" => [
+            "enablePrettyUrl" => true,
+            "enableStrictParsing" => false,
+            "showScriptName" => false,
+            "suffix" => "",
+            "rules" => [
+                "<controller:\w+>/<id:\d+>"=>"<controller>/view",
+                "<controller:\w+>/<action:\w+>"=>"<controller>/<action>"
             ],
         ],
     ],
@@ -76,5 +73,5 @@ return [
             'rbac/user/reset-password'
         ]
     ],
-    'params' => $params,
+
 ];

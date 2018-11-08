@@ -10,8 +10,8 @@ $urlParams = $generator->generateUrlParams();
 
 echo "<?php\n";
 ?>
-use backend\assets\LayuiAsset;
-LayuiAsset::register($this);
+use backend\assets\UiLayAsset;
+UiLayAsset::register($this);
 ?>
 <div class="<?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>-update">
     <?= "<?= " ?>$this->render('_form', [

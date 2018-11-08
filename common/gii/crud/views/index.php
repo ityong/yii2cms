@@ -14,10 +14,10 @@ echo "<?php\n";
 
 use yii\helpers\Html;
 use yii\helpers\Url;
-use backend\assets\LayuiAsset;
+use backend\assets\UiLayAsset;
 use <?= $generator->indexWidgetType === 'grid' ? "yii\\grid\\GridView" : "yii\\widgets\\ListView" ?>;
 <?= $generator->enablePjax ? 'use yii\widgets\Pjax;' : '' ?>
-LayuiAsset::register($this); 
+UiLayAsset::register($this);
 $this->registerJs($this->render('js/index.js'));
 /* @var $this yii\web\View */
 <?= !empty($generator->searchModelClass) ? "/* @var \$searchModel " . ltrim($generator->searchModelClass, '\\') . " */\n" : '' ?>

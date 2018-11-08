@@ -1,6 +1,6 @@
 <?php
 use backend\assets\AppAsset;
-use backend\assets\LayuiAsset;
+use backend\assets\UiLayAsset;
 
 $action_list = [
 	'user/login',
@@ -19,8 +19,8 @@ if (in_array(Yii::$app->controller->id . '/' . Yii::$app->controller->action->id
 	];
 	//只需要在首页的时候加载某些资源
 	if(in_array(Yii::$app->controller->id . '/' . Yii::$app->controller->action->id, $bootstrp_list)){
-		LayuiAsset::register($this);
-		LayuiAsset::addScript($this, "@web/resources/js/index.js");
+		UiLayAsset::register($this);
+		UiLayAsset::addScript($this, "@web/resources/js/index.js");
 	}else{
 		//加载bootstrp资源
 		AppAsset::register($this);

@@ -1,10 +1,10 @@
 <?php
-use backend\assets\LayuiAsset;
+use backend\assets\UiLayAsset;
 use yii\helpers\Html;
 
-LayuiAsset::register($this);
-LayuiAsset::addScript($this, "@web/resources/js/login.js");
-LayuiAsset::addCss($this, "@web/resources/css/login.css");
+UiLayAsset::register($this);
+UiLayAsset::addScript($this, "@web/resources/js/login.js");
+UiLayAsset::addCss($this, "@web/resources/css/login.css");
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>

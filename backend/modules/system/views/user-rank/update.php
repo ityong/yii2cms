@@ -1,7 +1,7 @@
 <?php
 use yii\helpers\Html;
-use backend\assets\LayuiAsset;
-LayuiAsset::register($this);
+use backend\assets\UiLayAsset;
+UiLayAsset::register($this);
 ?>
 <div class="user-rank-update">
 

@@ -2,9 +2,9 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-use backend\assets\LayuiAsset;
+use backend\assets\UiLayAsset;
 
-LayuiAsset::register($this);
+UiLayAsset::register($this);
 $this->registerJs($this->render('js/index.js'));
 ?>
 <blockquote class="layui-elem-quote" style="font-size: 14px;">

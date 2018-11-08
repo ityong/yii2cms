@@ -5,9 +5,9 @@ use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\web\YiiAsset;
 use yii\widgets\DetailView;
-use backend\assets\LayuiAsset;
+use backend\assets\UiLayAsset;
 
-LayuiAsset::register($this);
+UiLayAsset::register($this);
 AnimateAsset::register($this);
 YiiAsset::register($this);
 $opts = Json::htmlEncode([

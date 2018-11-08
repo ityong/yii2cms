@@ -1,7 +1,7 @@
 <?php
-use backend\assets\LayuiAsset;
+use backend\assets\UiLayAsset;
 
-LayuiAsset::register($this);
+UiLayAsset::register($this);
 ?>
 <div class="auth-item-create">
     <?=$this->render('_form', [
