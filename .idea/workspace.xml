@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="208e5023-c536-4345-a3cc-1ea8403831a3" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/AnimateAsset.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/AnimateAsset.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/AutocompleteAsset.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/AutocompleteAsset.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/Module.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/Module.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/assets/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/assets/animate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/assets/jquery-ui-1.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/assets/jquery-ui-1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/assets/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/assets/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/assets/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/assets/jquery-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/assets/list-item.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/assets/list-item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/assets/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/components/AccessControl.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/components/AccessControl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/components/Configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/components/Configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/components/DbManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/components/DbManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/components/GuestRule.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/components/GuestRule.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/components/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/components/Helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/components/ItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/components/ItemController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/components/MenuHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/components/MenuHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/components/RouteRule.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/components/RouteRule.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/controllers/AssignmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/controllers/AssignmentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/controllers/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/controllers/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/controllers/LogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/controllers/LogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/controllers/MenuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/controllers/MenuController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/controllers/PermissionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/controllers/PermissionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/controllers/RoleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/controllers/RoleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/controllers/RouteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/controllers/RouteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/controllers/RuleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/controllers/RuleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/mail/layouts/html.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/mail/layouts/html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/mail/layouts/text.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/mail/layouts/text.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/mail/passwordResetToken-html.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/mail/passwordResetToken-html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/mail/passwordResetToken-text.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/mail/passwordResetToken-text.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/messages/de/rbac-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/messages/de/rbac-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/messages/en/rbac-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/messages/en/rbac-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/messages/es/rbac-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/messages/es/rbac-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/messages/fa-IR/rbac-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/messages/fa-IR/rbac-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/messages/fr/rbac-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/messages/fr/rbac-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/messages/hr/rbac-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/messages/hr/rbac-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/messages/id/rbac-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/messages/id/rbac-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/messages/it/rbac-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/messages/it/rbac-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/messages/ja/rbac-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/messages/ja/rbac-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/messages/nl/rbac-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/messages/nl/rbac-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/messages/pl/rbac-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/messages/pl/rbac-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/messages/pt-BR/rbac-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/messages/pt-BR/rbac-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/messages/ru/rbac-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/messages/ru/rbac-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/messages/th/rbac-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/messages/th/rbac-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/messages/vi/rbac-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/messages/vi/rbac-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/messages/zh-CN/rbac-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/messages/zh-CN/rbac-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/messages/zh-TW/rbac-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/messages/zh-TW/rbac-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/migrations/m140602_111327_create_menu_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/migrations/m140602_111327_create_menu_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/migrations/m160312_050000_create_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/migrations/m160312_050000_create_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/migrations/schema-mssql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/migrations/schema-mssql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/migrations/schema-mysql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/migrations/schema-mysql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/migrations/schema-oci.sql" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/migrations/schema-oci.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/migrations/schema-pgsql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/migrations/schema-pgsql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/migrations/schema-sqlite.sql" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/migrations/schema-sqlite.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/models/Assignment.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/models/Assignment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/models/AuthItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/models/AuthItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/models/BizRule.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/models/BizRule.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/models/Log.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/models/Log.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/models/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/models/Menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/models/Route.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/models/Route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/models/form/ChangePassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/models/form/ChangePassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/models/form/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/models/form/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/models/form/PasswordResetRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/models/form/PasswordResetRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/models/form/ResetPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/models/form/ResetPassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/models/form/Signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/models/form/Signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/models/searchs/Assignment.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/models/searchs/Assignment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/models/searchs/AuthItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/models/searchs/AuthItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/models/searchs/BizRule.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/models/searchs/BizRule.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/models/searchs/Log.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/models/searchs/Log.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/models/searchs/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/models/searchs/Menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/models/searchs/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/models/searchs/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/assignment/_search.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/assignment/_search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/assignment/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/assignment/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/assignment/js/_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/assignment/js/_script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/assignment/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/assignment/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/assignment/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/assignment/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/default/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/default/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/item/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/item/_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/item/_search.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/item/_search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/item/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/item/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/item/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/item/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/item/js/_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/item/js/_script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/item/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/item/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/item/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/item/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/item/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/item/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/layouts/left-menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/layouts/left-menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/layouts/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/layouts/right-menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/layouts/right-menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/layouts/top-menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/layouts/top-menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/log/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/log/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/log/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/log/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/log/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/log/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/menu/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/menu/_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/menu/_search.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/menu/_search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/menu/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/menu/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/menu/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/menu/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/menu/js/_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/menu/js/_script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/menu/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/menu/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/menu/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/menu/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/menu/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/menu/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/route/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/route/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/route/js/_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/route/js/_script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/rule/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/rule/_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/rule/_search.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/rule/_search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/rule/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/rule/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/rule/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/rule/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/rule/js/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/rule/js/create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/rule/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/rule/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/rule/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/rule/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/rule/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/rule/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/user/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/user/_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/user/_search.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/user/_search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/user/change-password.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/user/change-password.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/user/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/user/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/user/js/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/user/js/create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/user/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/user/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/user/js/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/user/js/upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/user/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/user/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/user/requestPasswordResetToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/user/requestPasswordResetToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/user/resetPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/user/resetPassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/user/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/user/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/user/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/user/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/rbac/views/user/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/modules/auth/views/user/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/views/site/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/site/nav.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>memcache</find>
+      <find>账号:demo</find>
+      <find>LayuiAsset</find>
+      <find>@webroot</find>
+      <find>rbac/</find>
+      <find>namespace rbac\</find>
+      <find>use rbac\</find>
+      <find>@rbac</find>
+      <find>DbManager</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>UiLayAsset</replace>
+      <replace>namespace auth\</replace>
+      <replace>use auth\</replace>
+      <replace>@auth</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>G:\WEB\WWW\yii2cms</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/backend/web/index.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/common/config/main-local.php" />
+        <option value="$PROJECT_DIR$/backend/web/resources/js/login.js" />
+        <option value="$PROJECT_DIR$/backend/config/main-local.php" />
+        <option value="$PROJECT_DIR$/environments/dev/backend/config/main-local.php" />
+        <option value="$PROJECT_DIR$/environments/dev/common/config/main-local.php" />
+        <option value="$PROJECT_DIR$/environments/dev/common/config/params.php" />
+        <option value="$PROJECT_DIR$/backend/config/params.php" />
+        <option value="$PROJECT_DIR$/common/config/main.php" />
+        <option value="$PROJECT_DIR$/environments/dev/common/config/main.php" />
+        <option value="$PROJECT_DIR$/environments/dev/backend/config/params.php" />
+        <option value="$PROJECT_DIR$/common/config/params.php" />
+        <option value="$PROJECT_DIR$/common/config/bootstrap.php" />
+        <option value="$PROJECT_DIR$/api/web/index.php" />
+        <option value="$PROJECT_DIR$/environments/dev/backend/config/main.php" />
+        <option value="$PROJECT_DIR$/env.php" />
+        <option value="$PROJECT_DIR$/backend/web/index.php" />
+        <option value="$PROJECT_DIR$/backend/views/site/index.php" />
+        <option value="$PROJECT_DIR$/backend/assets/AppAsset.php" />
+        <option value="$PROJECT_DIR$/backend/assets/LayuiAsset.php" />
+        <option value="$PROJECT_DIR$/backend/modules/rbac/controllers/PermissionController.php" />
+        <option value="$PROJECT_DIR$/backend/modules/auth/Module.php" />
+        <option value="$PROJECT_DIR$/backend/modules/auth/AnimateAsset.php" />
+        <option value="$PROJECT_DIR$/backend/modules/auth/AutocompleteAsset.php" />
+        <option value="$PROJECT_DIR$/backend/modules/auth/mail/passwordResetToken-html.php" />
+        <option value="$PROJECT_DIR$/backend/modules/auth/mail/passwordResetToken-text.php" />
+        <option value="$PROJECT_DIR$/backend/config/main.php" />
+        <option value="$PROJECT_DIR$/backend/modules/auth/controllers/AssignmentController.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/backend/web/assets/8147f6cc/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/vendor/cebe/markdown" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-faker" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-bootstrap" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-debug" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-gii" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-composer" />
+      <path value="$PROJECT_DIR$/vendor/bower/inputmask" />
+      <path value="$PROJECT_DIR$/vendor/bower/jquery" />
+      <path value="$PROJECT_DIR$/vendor/bower/bootstrap" />
+      <path value="$PROJECT_DIR$/vendor/bower/yii2-pjax" />
+      <path value="$PROJECT_DIR$/vendor/codeception/stub" />
+      <path value="$PROJECT_DIR$/vendor/bower/punycode" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/codeception/phpunit-wrapper" />
+      <path value="$PROJECT_DIR$/vendor/bower/typeahead.js" />
+      <path value="$PROJECT_DIR$/vendor/codeception/base" />
+      <path value="$PROJECT_DIR$/vendor/codeception/verify" />
+      <path value="$PROJECT_DIR$/vendor/zoujingli/wechat-developer" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/bower-asset/punycode" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/bower-asset/typeahead.js" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/bower-asset/bootstrap" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/bower-asset/yii2-pjax" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/bower-asset/inputmask" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/bower-asset/jquery" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/php-diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/yiisoft/yii2" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/behat/gherkin" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="185" />
+    <option name="y" value="33" />
+    <option name="width" value="1469" />
+    <option name="height" value="942" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="yii2cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii2cms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii2cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii2cms" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="DbManager &#9;null&#9;null&#10;DbManager&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xianjindai" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\WEB\WWW\yii2cms\environments\dev\common" />
+      <recent name="G:\WEB\WWW\yii2cms\common\config" />
+      <recent name="G:\WEB\WWW\yii2cms\backend\modules" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="main.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/yii2cms/environments/dev/backend/config/main.php" />
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.main.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="208e5023-c536-4345-a3cc-1ea8403831a3" name="Default" comment="" />
+      <created>1541521503703</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1541521503703</updated>
+      <workItem from="1541521509798" duration="325000" />
+      <workItem from="1541521851071" duration="486000" />
+      <workItem from="1541597501272" duration="3459000" />
+      <workItem from="1541683811084" duration="12667000" />
+    </task>
+    <task id="LOCAL-00001" summary="start">
+      <created>1541521767460</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1541521767460</updated>
+    </task>
+    <task id="LOCAL-00002" summary="start">
+      <created>1541521927575</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1541521927575</updated>
+    </task>
+    <task id="LOCAL-00003" summary="精简配置">
+      <created>1541694259940</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1541694259940</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="16681000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3293348" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.66521263" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1945629" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.58124316" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="3" />
+    <MESSAGE value="start" />
+    <MESSAGE value="精简配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="精简配置" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/backend/views/site/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#123#144#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/layouts/main-login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii_test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii_test.bat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2877">
+          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/assets/AppAsset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/assets/UiLayAsset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="e#34#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/config/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/assets/animate.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/assets/jquery-ui.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environments/dev/backend/config/test-local.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environments/dev/backend/config/params.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environments/dev/backend/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-267" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/web/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/rbac/migrations/m140506_102106_rbac_init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/components/RouteRule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding>
+            <element signature="e#35#43#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/components/MenuHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding>
+            <element signature="e#35#43#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/components/ItemController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/components/Helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/components/GuestRule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/rbac/DbManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2039">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#6#150#0#PHP" expanded="true" />
+            <element signature="e#173#181#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/system/Module.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/models/Assignment.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/models/AuthItem.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/models/BizRule.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/models/Log.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/models/Menu.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/mail/passwordResetToken-html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding>
+            <element signature="e#6#27#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/mail/passwordResetToken-text.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/mail/layouts/html.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/mail/layouts/text.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/components/AccessControl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding>
+            <element signature="e#35#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/components/DbManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/components/Configs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <folding>
+            <element signature="e#35#43#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/controllers/AssignmentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-672">
+          <caret line="34" column="79" lean-forward="true" selection-start-line="34" selection-start-column="79" selection-end-line="34" selection-end-column="79" />
+          <folding>
+            <element signature="e#36#44#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/controllers/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/controllers/LogController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#36#44#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/controllers/MenuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="e#36#44#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/controllers/PermissionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding>
+            <element signature="e#36#71#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/controllers/RoleController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/controllers/RouteController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/controllers/RuleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1701" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2562">
+          <caret line="68" column="69" lean-forward="true" selection-start-line="68" selection-start-column="69" selection-end-line="68" selection-end-column="69" />
+          <folding>
+            <element signature="e#36#44#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/AnimateAsset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/AutocompleteAsset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3137">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <folding>
+            <element signature="e#24#32#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/auth/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-10">
+            <caret line="40" column="3" lean-forward="true" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/ToolsController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>

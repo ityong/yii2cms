@@ -1,5 +1,5 @@
 <?php
-use rbac\components\MenuHelper;
+use auth\components\MenuHelper;
 use backend\widgets\Menu;
 ?>
 <?php

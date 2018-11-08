@@ -10,18 +10,15 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [
-        "rbac" => [
-            'class' => 'rbac\Module',
+        "auth" => [
+            'class' => 'auth\Module',
         ],
         "system" => [
             'class' => 'system\Module',
         ],
-        "backup" => [
-            'class' => 'backup\Module',
-        ],
     ],
     "aliases" => [
-        '@rbac'   => '@backend/modules/rbac',
+        '@auth'   => '@backend/modules/auth',
         '@system' => '@backend/modules/system',
         '@backup' => '@backend/modules/backup',
     ],
@@ -31,8 +28,8 @@ return [
             'cookieValidationKey' => '8tPt7bDj244hrkwLdq5GvJg-08vkyo-ssss',
         ],
         'user' => [
-            'identityClass' => 'rbac\models\User',
-            'loginUrl' => ['/rbac/user/login'],
+            'identityClass' => 'auth\models\User',
+            'loginUrl' => ['/auth/user/login'],
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
         ],
@@ -52,7 +49,7 @@ return [
             'errorAction' => 'site/error',
         ],
         "authManager" => [
-            "class" => 'yii\rbac\DbManager',
+            "class" => 'auth\components\DbManager',
             "defaultRoles" => ["guest"],
         ],
         "urlManager" => [
@@ -67,10 +64,10 @@ return [
         ],
     ],
     'as access' => [
-        'class' => 'rbac\components\AccessControl',
+        'class' => 'auth\components\AccessControl',
         'allowActions' => [
-            'rbac/user/request-password-reset',
-            'rbac/user/reset-password'
+            'auth/user/request-password-reset',
+            'auth/user/reset-password'
         ]
     ],
 
