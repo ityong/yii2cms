@@ -1,9 +1,10 @@
 <?php
 
-$last_line = system('git pull', $retval);
+$last_line = exec('git pull', $retval);
+
+echo 'result:';
 
 echo "<pre>";
-
 print_r($retval);
 
 echo "</pre>";
