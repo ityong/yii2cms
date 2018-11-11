@@ -1,27 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="208e5023-c536-4345-a3cc-1ea8403831a3" name="Default" comment="精简配置">
-      <change afterPath="$PROJECT_DIR$/backend/controllers/BaseController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/controllers/BookController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/gii_crud/layui/controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/gii_crud/layui/search.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/gii_crud/layui/views/_form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/gii_crud/layui/views/_search.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/gii_crud/layui/views/create.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/gii_crud/layui/views/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/gii_crud/layui/views/update.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/gii_crud/layui/views/view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/views/book/index2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/views/book/js/create.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/views/book/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/views/book/js/online-users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/views/book/js/upload.js" afterDir="false" />
+    <list default="true" id="208e5023-c536-4345-a3cc-1ea8403831a3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/ToolsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/ToolsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/layouts/main-index.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/layouts/main-index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/environments/dev/backend/config/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/environments/dev/backend/config/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/environments/dev/backend/config/params.php" beforeDir="false" afterPath="$PROJECT_DIR$/environments/dev/backend/config/params.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,8 +19,8 @@
       <file leaf-file-name="EbookSearch.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/models/searchs/EbookSearch.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="59" column="32" lean-forward="true" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+            <state relative-caret-position="510">
+              <caret line="61" column="34" lean-forward="true" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -318,7 +299,7 @@
       <workItem from="1541683811084" duration="12689000" />
       <workItem from="1541773306936" duration="9368000" />
       <workItem from="1541820980536" duration="926000" />
-      <workItem from="1541910111719" duration="11084000" />
+      <workItem from="1541910111719" duration="11110000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1541521767460</created>
@@ -348,11 +329,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541696505827</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="书籍">
+      <created>1541921217511</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1541921217512</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38081000" />
+    <option name="totallyTimeSpent" value="38107000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -400,7 +388,8 @@
     <MESSAGE value="3" />
     <MESSAGE value="start" />
     <MESSAGE value="精简配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="精简配置" />
+    <MESSAGE value="书籍" />
+    <option name="LAST_COMMIT_MESSAGE" value="书籍" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -784,8 +773,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/models/searchs/EbookSearch.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="59" column="32" lean-forward="true" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+        <state relative-caret-position="510">
+          <caret line="61" column="34" lean-forward="true" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
         </state>
       </provider>
     </entry>
