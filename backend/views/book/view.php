@@ -11,15 +11,23 @@ $this->title = $model->name;
 $this->params['breadcrumbs'][] = ['label' => 'Ebooks', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 UiLayAsset::register($this);
+UiLayAsset::addCss($this,'plugins/viewjs/viewer.min.css');
+UiLayAsset::addScript($this,'plugins/viewjs/viewer.min.js');
+$this->registerJs($this->render('js/view.js'));
 ?>
-<div class="ebook-view">
+<div class="ebook-view" id="img-view">
     <?= DetailView::widget([
         'model' => $model,
         'options' => ['class' => 'layui-table'],
         'template' => '<tr><th width="100px">{label}</th><td>{value}</td></tr>',
         'attributes' => [
             'id',
-            'type',
+            [
+                'attribute' => 'type',
+                'value' => function ($model){
+                    return Ebook::BOOK_TYPE[$model->type] ?? '未定义';
+                },
+            ],
             'name',
             'author',
             [

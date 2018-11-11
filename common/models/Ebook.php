@@ -60,7 +60,7 @@ class Ebook extends \yii\db\ActiveRecord
     const BOOK_STATUS = [
         self::BOOK_STATUS_DEFAULT => '搜寻中..',
         self::BOOK_STATUS_HAVING => '已找到',
-        self::BOOK_STATUS_NOT_FIND => '无',
+        self::BOOK_STATUS_NOT_FIND => '无资源',
     ];
 
     //清晰度

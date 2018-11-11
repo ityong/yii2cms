@@ -103,6 +103,35 @@ class BookController extends BaseController
     }
 
     /**
+     * Updates an existing Ebook model.
+     * If update is successful, the browser will be redirected to the 'view' page.
+     * @param string $id
+     * @return mixed
+     * @throws NotFoundHttpException if the model cannot be found
+     */
+    public function actionSetRes($id)
+    {
+        $model = $this->findModel($id);
+
+        if (Yii::$app->request->isAjax) {
+            $params = Yii::$app->request->post();
+            Yii::$app->response->format = 'json';
+            $model->find_info = $params['find_info'];
+            $model->definition = $params['definition'];
+            $model->status = $params['definition'] ? Ebook::BOOK_STATUS_HAVING :Ebook::BOOK_STATUS_NOT_FIND ;
+
+            return $model->save() ? ['code'=>200,'msg'=>'ok'] : ['code'=>400,'msg'=>'更新失败'];
+
+        }
+
+        return $this->render('set-res', [
+            'model' => $model,
+        ]);
+    }
+
+
+
+    /**
      * Deletes an existing Ebook model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param string $id

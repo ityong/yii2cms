@@ -7,7 +7,9 @@ use yii\grid\GridView;
 use common\models\Ebook;
 UiLayAsset::register($this);
 $this->registerJs($this->render('js/index.js'));
-
+UiLayAsset::addCss($this,'plugins/viewjs/viewer.min.css');
+UiLayAsset::addScript($this,'plugins/viewjs/viewer.min.js');
+$this->registerJs($this->render('js/view.js'));
 
 /* @var $this yii\web\View */
 /* @var $searchModel common\models\searchs\EbookSearch */
@@ -21,7 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= $this->render('_search', ['model' => $searchModel]); ?>
 </blockquote>
 
-<div class="ebook-index layui-form news_list">
+<div class="ebook-index layui-form news_list" id="img-view">
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -86,13 +88,16 @@ $this->params['breadcrumbs'][] = $this->title;
                     'width' => '10%',
                     'style'=> 'text-align: center;'
                 ],
-                'template' =>'{view} {update} {delete}',
+                'template' =>'{view} {update} {setres}{delete}',
                 'buttons' => [
                     'view' => function ($url, $model, $key){
                         return Html::a('查看', Url::to(['view','id'=>$model->id]), ['class' => "layui-btn layui-btn-xs layui-default-view"]);
                     },
                     'update' => function ($url, $model, $key) {
                         return Html::a('修改', Url::to(['update','id'=>$model->id]), ['class' => "layui-btn layui-btn-normal layui-btn-xs layui-default-update"]);
+                    },
+                    'setres' => function ($url, $model, $key) {
+                        return Html::a('资源', Url::to(['set-res','id'=>$model->id]), ['class' => "layui-btn layui-btn-warm layui-btn-xs set-res-info"]);
                     },
                     'delete' => function ($url, $model, $key) {
                         return Html::a('删除', Url::to(['delete','id'=>$model->id]), ['class' => "layui-btn layui-btn-danger layui-btn-xs layui-default-delete"]);
