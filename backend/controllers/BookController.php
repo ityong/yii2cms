@@ -111,10 +111,23 @@ class BookController extends BaseController
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
 
-        return $this->redirect(['index']);
+        $model = $this->findModel($id);
+        $delRes = $model->delete();
+
+        if (Yii::$app->request->isAjax) {
+            if($delRes){
+                return['code'=>200,"msg"=>"删除成功"];
+            }else{
+                $errors = $model->firstErrors;
+                return ['code'=>400,"msg"=>reset($errors)];
+            }
+        } else {
+            return $this->redirect(['index']);
+        }
+
     }
+
 
     /**
      * Finds the Ebook model based on its primary key value.

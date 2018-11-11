@@ -25,13 +25,13 @@ class Signup extends Model
             ['username', 'filter', 'filter' => 'trim'],
             ['username', 'required'],
 			['nickname', 'string', 'max' => 32],
-            ['username', 'unique', 'targetClass' => 'rbac\models\User', 'message' => 'This username has already been taken.'],
+            ['username', 'unique', 'targetClass' => 'auth\models\User', 'message' => 'This username has already been taken.'],
             [['username','head_pic'], 'string', 'min' => 2, 'max' => 255],
 
             ['email', 'filter', 'filter' => 'trim'],
             ['email', 'required'],
             ['email', 'email'],
-            ['email', 'unique', 'targetClass' => 'rbac\models\User', 'message' => 'This email address has already been taken.'],
+            ['email', 'unique', 'targetClass' => 'auth\models\User', 'message' => 'This email address has already been taken.'],
 
             ['password', 'required'],
             ['password', 'string', 'min' => 6],

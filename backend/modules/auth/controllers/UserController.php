@@ -231,6 +231,7 @@ class UserController extends Controller
     public function actionSignup()
     {
         $model = new Signup();
+
         if ($model->load(Yii::$app->getRequest()->post())) {
             if ($user = $model->signup()) {
 				return $this->render('view', [
