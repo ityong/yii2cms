@@ -30,8 +30,8 @@ use yii\helpers\Url;
 					</a>
 					<dl class="layui-nav-child top-50">
 						<dd><a href="javascript:;" class="changeSkin"><i class="iconfont icon-yifu userMenu"></i><cite>换肤</cite></a></dd>
-						<dd><a href="<?= Url::to(['rbac/user/update-self','id'=>Yii::$app->user->identity->id])?>" class="userInfo"><i class="iconfont icon-wo userMenu" data-icon="icon-wo"></i><cite>资料</cite></a></dd>
-						<dd><a href="<?= Url::to(['rbac/user/logout'])?>" class="signOut yii2-post-logout"><i class="iconfont icon-logout userMenu"></i><cite>退出</cite></a></dd>
+						<dd><a href="<?= Url::to(['auth/user/update-self','id'=>Yii::$app->user->identity->id])?>" class="userInfo"><i class="iconfont icon-wo userMenu" data-icon="icon-wo"></i><cite>资料</cite></a></dd>
+						<dd><a href="<?= Url::to(['auth/user/logout'])?>" class="signOut yii2-post-logout"><i class="iconfont icon-logout userMenu"></i><cite>退出</cite></a></dd>
 					</dl>
 				</li>
 			</ul>
