@@ -5,7 +5,7 @@ namespace auth\models;
 use auth\components\Configs;
 use auth\components\Helper;
 use Yii;
-use yii\base\Object;
+use yii\base\MObject;
 
 /**
  * Description of Assignment
@@ -13,7 +13,7 @@ use yii\base\Object;
  * @author Misbahul D Munir <misbahuldmunir@gmail.com>
  * @since 2.5
  */
-class Assignment extends Object
+class Assignment extends MObject
 {
     /**
      * @var integer User id
