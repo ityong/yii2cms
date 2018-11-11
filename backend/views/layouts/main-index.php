@@ -7,7 +7,7 @@ use yii\helpers\Html;
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>后台管理-2</title>
+	<title>cms-ityong</title>
 	<meta name="renderer" content="webkit">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta http-equiv="Access-Control-Allow-Origin" content="*">
