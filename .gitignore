@@ -6,3 +6,4 @@
 /console/runtime/*
 /.idea/*
 .idea/*
+env.php
