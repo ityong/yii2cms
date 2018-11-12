@@ -93,8 +93,14 @@ class BookController extends BaseController
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if (Yii::$app->request->isPost) {
+            $params = Yii::$app->request->post();
+            $params['Ebook']['cover'] = $params['Ebook']['cover'] ?
+                str_replace(Yii::$app->params['WEB_SITE_RESOURCES_URL'],'',$params['Ebook']['cover']) : '';
+
+            if ($model->load($params) && $model->save()) {
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
         }
 
         return $this->render('update', [
