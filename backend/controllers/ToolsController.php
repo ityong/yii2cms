@@ -21,7 +21,7 @@ class ToolsController extends Controller
         $file_tmp_path =$file['file']['tmp_name'];
 
         $baseFileRoot = '../../resourcefile/';
-        $upDir = "uploads/".date("Ymd") . '/';
+        $upDir = "uploads/".date("Ym") . '/';
         $dir = $baseFileRoot . $upDir;
         if (!is_dir($baseFileRoot . $upDir)){
             mkdir($dir,0777,true);
